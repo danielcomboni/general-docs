@@ -1,4 +1,16 @@
-### Caddyfile.local
+### install caddy if not yet installed
+```cli
+sudo apt update
+sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https curl
+curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
+sudo apt update
+sudo apt install caddy
+```
+
+### create Caddyfile.local
+>[!NOTE]
+> *Caddyfile* is standard nomenclature
 ```cli
 
 {
@@ -44,4 +56,9 @@ lainisha.local {
 www.lainisha.local {
     redir https://lainisha.local{uri} permanent 308
 }
+```
+
+### run caddy server
+```cli
+sudo caddy run --config Caddyfile.local
 ```
