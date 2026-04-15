@@ -67,3 +67,14 @@ www.lainisha.local {
 ```cli
 sudo caddy run --config Caddyfile.local
 ```
+
+### edit hosts file
+```clis
+sudo gedit /etc/hosts
+```
+
+### add this to hosts file
+```cli
+127.0.0.1 lainisha.local
+127.0.0.1 www.lainisha.local
+```
