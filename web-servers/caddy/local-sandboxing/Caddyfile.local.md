@@ -78,3 +78,15 @@ sudo gedit /etc/hosts
 ```cli
 sudo caddy run --config Caddyfile.local
 ```
+
+### run dev projects
+### open in browser
+```cli
+https://lainisha.local/
+```
+```cli
+https://lainisha.local/api/pos/files/logs
+```
+>[!NOTE]
+> the endpoints are just placeholders
+
