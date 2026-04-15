@@ -8,6 +8,16 @@ sudo apt update
 sudo apt install caddy
 ```
 
+### check caddy version
+```cli
+caddy version
+```
+
+### run caddy confi
+```cli
+sudo caddy run --config Caddyfile.local
+```
+
 ### create Caddyfile.local
 >[!NOTE]
 > *Caddyfile* is standard nomenclature
