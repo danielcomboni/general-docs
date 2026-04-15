@@ -13,11 +13,6 @@ sudo apt install caddy
 caddy version
 ```
 
-### run caddy confi
-```cli
-sudo caddy run --config Caddyfile.local
-```
-
 ### create Caddyfile.local
 >[!NOTE]
 > *Caddyfile* is standard nomenclature
@@ -68,7 +63,7 @@ www.lainisha.local {
 }
 ```
 
-### run caddy server
+### run caddy config
 ```cli
 sudo caddy run --config Caddyfile.local
 ```
